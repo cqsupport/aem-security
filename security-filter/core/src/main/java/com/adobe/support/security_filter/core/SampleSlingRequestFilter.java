@@ -75,7 +75,7 @@ public class SampleSlingRequestFilter implements Filter {
         secureResponseWrapper.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
         secureResponseWrapper.setHeader("X-Content-Type-Options", "nosniff");
         secureResponseWrapper.setHeader("X-XSS-Protection", "1; mode=block");
-        secureResponseWrapper.setHeader("X-Frame-Options", "DENY");
+        secureResponseWrapper.setHeader("X-Frame-Options", "SAME-ORIGIN");
         
         filterChain.doFilter(request, secureResponseWrapper);
     }
