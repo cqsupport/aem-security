@@ -29,3 +29,6 @@ hs_err_pid*
 
 # Maven 
 target
+
+# Mac OSX
+.DS_Store
