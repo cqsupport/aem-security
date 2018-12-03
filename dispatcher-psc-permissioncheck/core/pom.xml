@@ -6,25 +6,25 @@
 	<parent>
 		<groupId>com.adobe.support</groupId>
 		<artifactId>parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.1</version>
 		<relativePath>../parent</relativePath>
 	</parent>
 	<groupId>com.adobe.support</groupId>
 	<artifactId>dispatcher-psc.core</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
-	<name>Security Filter - Core</name>
-	<description>Core bundle for Security Filter</description>
+	<version>0.0.1</version>
+	<name>Security - Dispatcher Permission Sensitive Caching</name>
+	<description>Dispatcher Permission Sensitive Caching Servlet - https://helpx.adobe.com/experience-manager/kb/PSCachingDelivery.html</description>
 	<build>
 		<plugins>
-		        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-                <source>1.8</source>
-                <target>1.7</target>
-            </configuration>
-        </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-scr-plugin</artifactId>
@@ -35,8 +35,8 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-					    <_dsannotations-options>inherit</_dsannotations-options>
-						<Embed-Dependency>esapi,commons-beanutils,commons-collections,commons-configuration,commons-fileupload,bsh-core,antisamy,xom</Embed-Dependency>
+						<Import-Package>*</Import-Package>
+						<_dsannotations-options>inherit</_dsannotations-options>
 					</instructions>
 				</configuration>
 			</plugin>
@@ -63,25 +63,25 @@
 		</profile>
 	</profiles>
 	<dependencies>
-			<!-- OSGi Dependencies -->
-			<dependency>
-				<groupId>org.osgi</groupId>
-				<artifactId>osgi.core</artifactId>
-				<version>6.0.0</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.osgi</groupId>
-				<artifactId>osgi.cmpn</artifactId>
-				<version>6.0.0</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.osgi</groupId>
-				<artifactId>osgi.annotation</artifactId>
-				<version>6.0.1</version>
-				<scope>provided</scope>
-			</dependency>
+		<!-- OSGi Dependencies -->
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi.core</artifactId>
+			<version>6.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi.cmpn</artifactId>
+			<version>6.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi.annotation</artifactId>
+			<version>6.0.1</version>
+			<scope>provided</scope>
+		</dependency>
 		<!-- OSGi Dependencies -->
 		<dependency>
 			<groupId>org.apache.felix</groupId>
@@ -108,13 +108,7 @@
 			<artifactId>org.apache.felix.http.api</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-        <dependency>
-            <groupId>com.adobe.cq.social</groupId>
-            <artifactId>cq-socialcommunities-api</artifactId>
-            <version>1.11.170</version>
-            <scope>provided</scope>
-        </dependency>
-        
+
 		<!-- Other Dependencies -->
 		<dependency>
 			<groupId>org.slf4j</groupId>

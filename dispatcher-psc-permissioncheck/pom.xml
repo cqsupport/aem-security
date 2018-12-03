@@ -4,7 +4,7 @@
 	<groupId>com.adobe.support</groupId>
 	<artifactId>dispatcher-psc</artifactId>
 	<packaging>pom</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<description>Security Filter</description>
     
 	<modules>

@@ -5,12 +5,11 @@
 	<parent>
 		<artifactId>dispatcher-psc</artifactId>
 		<groupId>com.adobe.support</groupId>
-		<version>0.0.1-SNAPSHOT</version>
+                <version>0.0.1</version>
 	</parent>
 	<groupId>com.adobe.support</groupId>
 	<artifactId>parent</artifactId>
 	<packaging>pom</packaging>
-	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<granite.host>localhost</granite.host>
 		<granite.port>4502</granite.port>
