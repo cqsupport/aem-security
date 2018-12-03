@@ -1,12 +1,12 @@
 # Security Filter
 
-Example code that shows how to implement a Felix whiteboard javax.servlet.Filter that forces secure cookies and adds some response headers.
+Example code that shows how to implement a [Dispatcher Permission Sensitive Caching servlet](https://helpx.adobe.com/experience-manager/kb/PSCachingDelivery.html).
 
 ## Modules
 
 The main parts of the template are:
 
-* core: contains the filter code.
+* core: contains the servlet code.
 
 ## How to build
 
@@ -37,7 +37,7 @@ You need to configure the Adobe Maven repository in your Maven settings:
 			<repositories>
 				<repository>
 					<id>adobe-public-releases</id>
-					<name>Adobe Basel Public Repository</name>
+					<name>Adobe Public Repository</name>
 					<url>http://repo.adobe.com/nexus/content/groups/public</url>
 					<releases>
 						<enabled>true</enabled>
@@ -51,7 +51,7 @@ You need to configure the Adobe Maven repository in your Maven settings:
 			<pluginRepositories>
 				<pluginRepository>
 					<id>adobe-public-releases</id>
-					<name>Adobe Basel Public Repository</name>
+					<name>Adobe Public Repository</name>
 					<url>http://repo.adobe.com/nexus/content/groups/public</url>
 					<releases>
 						<enabled>true</enabled>
