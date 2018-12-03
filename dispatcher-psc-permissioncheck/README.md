@@ -1,4 +1,4 @@
-# Security Filter
+# Dispatcher PSC Servlet
 
 Example code that shows how to implement a [Dispatcher Permission Sensitive Caching servlet](https://helpx.adobe.com/experience-manager/kb/PSCachingDelivery.html).
 
