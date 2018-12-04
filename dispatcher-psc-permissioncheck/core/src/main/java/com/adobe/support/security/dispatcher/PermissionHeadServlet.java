@@ -18,11 +18,11 @@ public class PermissionHeadServlet extends SlingSafeMethodsServlet {
     
     public void doHead(SlingHttpServletRequest request, SlingHttpServletResponse response) {
         String uri = request.getParameter("uri");
-        Resource test = request.getResourceResolver().getResource(uri);
-        if (test != null) {
-            response.setStatus(SlingHttpServletResponse.SC_OK);
+        Resource test = request.getResourceResolver().resolve(uri);
+        if(test != null && !test.isResourceType(Resource.RESOURCE_TYPE_NON_EXISTING)) {
+        	response.setStatus(SlingHttpServletResponse.SC_OK);
         } else {
-            response.setStatus(SlingHttpServletResponse.SC_UNAUTHORIZED);
+        	response.setStatus(SlingHttpServletResponse.SC_UNAUTHORIZED);
         }
     }
 }
