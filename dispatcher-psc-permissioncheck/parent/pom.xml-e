@@ -5,7 +5,7 @@
 	<parent>
 		<artifactId>dispatcher-psc</artifactId>
 		<groupId>com.adobe.support</groupId>
-                <version>0.0.2</version>
+                <version>0.0.1</version>
 	</parent>
 	<groupId>com.adobe.support</groupId>
 	<artifactId>parent</artifactId>

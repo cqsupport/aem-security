@@ -6,13 +6,13 @@
 	<parent>
 		<groupId>com.adobe.support</groupId>
 		<artifactId>parent</artifactId>
-		<version>0.0.2</version>
+		<version>0.0.1</version>
 		<relativePath>../parent</relativePath>
 	</parent>
 	<groupId>com.adobe.support</groupId>
 	<artifactId>dispatcher-psc.core</artifactId>
 	<packaging>bundle</packaging>
-	<version>0.0.2</version>
+	<version>0.0.1</version>
 	<name>Security - Dispatcher Permission Sensitive Caching</name>
 	<description>Dispatcher Permission Sensitive Caching Servlet - https://helpx.adobe.com/experience-manager/kb/PSCachingDelivery.html</description>
 	<build>
